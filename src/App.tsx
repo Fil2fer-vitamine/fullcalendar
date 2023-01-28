@@ -9,6 +9,18 @@ function App() {
     <>
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionGridPlugin]}
+        headerToolbar={{
+          left:"prev next today",
+          center: "title",
+          right:"dayGridMonth timeGridDay"
+        }}
+        buttonText={{
+          day:"Visualisation sur la journée",
+          prev:"mois d'avant <<<",
+          next: ">>> mois d'après",
+          month:"Visualisation sur le mois",
+          today:"aujourd'hui"
+        }}
       />
     </>
   );
